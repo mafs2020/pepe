@@ -11,15 +11,15 @@ const routes: Routes = [
       {
         path: '',
         component: NavigationComponent,
-        children: [
-          {
-            path: '',
-            loadChildren: () =>
-              import('./characters/characters.module').then(
-                (m) => m.CharactersModule
-              ),
-          },
-        ],
+        // children: [
+        //   {
+        //     path: '',
+        //     loadChildren: () =>
+        //       import('./characters/characters.module').then(
+        //         (m) => m.CharactersModule
+        //       ),
+        //   },
+        // ],
       },
     ],
   },
